@@ -5,6 +5,7 @@ select * from citizen;
 select * from certificate_type;
 select* from certificate_application;
 select * from panchayat_office;
+update citizen c join panchayat_office po on c.village_name=po.village_name set c.address=po.village_name;
 alter table certificate_application drop issued_date;
 alter table certificate_application add column certificate_id int ,add column office_id int;
 update certificate_application ca join certificate_type ct on ca.certificate_name=ct.certificate_name set ca.certificate_id=ct.certificate_type_id;
