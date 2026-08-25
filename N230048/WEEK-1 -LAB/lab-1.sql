@@ -14,7 +14,7 @@ insert into certificate_application values (1001,101,"residence certificate","20
 select * from certificate_application;
 insert into panchayat_office values(1,"ramapuram gram panchayat","ramapuram",521101,08866557,"ramapuram@gmail","09:00:00",true),(2,"seethampeta gram panchayat","seethampeta",521102,08666000,"seethampeta@gamil","09:30:00",true),(3,"lakhsmipuram gram panchayat","lakshmipuram",521103,08666223,"lakhsmipuram@gmail","09:00:00",true),(4,"krishnapuram","krishnapuram",521104,08662345,"krishna@gamil","10:00:00",true),(5,"venkatapuram","venkatapuram",521105,08661288,"venkatapuram@gamil","09:30:00",true);
 select * from panchayat_office;
-insert into citizen values (107,"shareef","2007-01-31","male",814270662,"student","kornepadu",true,"kornepadu");
+insert into citizen values (107,"shareef","2007-01-31","male",814270662,"student","kornepadu",true);
 insert into certificate_type values(6,"income certificate","certifies income of a family",7,15.00,true);
 update certificate_application set application_status="submitted" where application_id=1001;
 update certificate_application set application_status="approved" where application_id=1002;
